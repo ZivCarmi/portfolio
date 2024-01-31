@@ -6,7 +6,10 @@ const Section = ({ children, className, ...props }: SectionProps) => {
   return (
     <section
       {...props}
-      className={cn("h-screen flex justify-center items-center", className)}
+      className={cn(
+        "lg:h-screen flex justify-center items-center mb-[7.5rem]",
+        className
+      )}
     >
       {children}
     </section>

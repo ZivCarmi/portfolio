@@ -7,7 +7,7 @@ const Paragraph = ({ children, className, ...props }: ParagraphProps) => {
     <p
       {...props}
       className={cn(
-        "my-4 text-site-primary-foreground text-pretty max-w-[32vw]",
+        "my-4 text-site-primary-foreground text-pretty md:max-w-[610px]",
         className
       )}
     >

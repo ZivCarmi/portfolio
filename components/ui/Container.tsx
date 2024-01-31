@@ -7,7 +7,7 @@ const Container = ({ children, className, ...props }: ContainerProps) => {
     <div
       {...props}
       className={cn(
-        "flex items-center max-w-[1700px] w-full md:px-32",
+        "flex items-center max-w-[1700px] w-full px-[15vw] md:px-16 lg:px-32",
         className
       )}
     >

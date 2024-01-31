@@ -4,20 +4,28 @@
 
 :root {
   --header-height: 11rem;
-  --me-image-width: 380px;
-  --me-image-height: 400px;
+  --me-image-width: 50vw;
+  --me-image-height: 50vw;
   --me-image-back-border-height: 2.5rem;
+}
+
+@media (max-width: 768px) {
+  :root {
+    --header-height: 8rem;
+    --me-image-width: 17rem;
+    --me-image-height: 17.5rem;
+  }
 }
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
+    --background: 0 0% 96%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 100%;
+    --card: 0 0% 96%;
     --card-foreground: 222.2 84% 4.9%;
 
-    --popover: 0 0% 100%;
+    --popover: 0 0% 96%;
     --popover-foreground: 222.2 84% 4.9%;
 
     --primary: 222.2 47.4% 11.2%;

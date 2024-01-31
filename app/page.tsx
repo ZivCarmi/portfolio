@@ -2,7 +2,7 @@ import About from "@/components/sections/About";
 import Home from "@/components/sections/Home";
 import Projects from "@/components/sections/Projects";
 
-export default function HomePage() {
+const HomePage = () => {
   return (
     <>
       <Home />
@@ -10,4 +10,6 @@ export default function HomePage() {
       <Projects />
     </>
   );
-}
+};
+
+export default HomePage;
