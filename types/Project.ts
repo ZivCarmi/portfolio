@@ -1,7 +1,6 @@
 export type ProjectType = {
   title: string;
   description: string;
-  badge?: string;
   github: string;
   website: string;
   style: {

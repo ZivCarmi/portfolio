@@ -1,18 +1,27 @@
+"use client";
+
 import { cn } from "@/lib/utils";
+import { h2Variants } from "@/lib/variants";
+import { H2AnimationOptions } from "@/types/Animations";
+import { HTMLMotionProps, motion } from "framer-motion";
 
-interface H2Props extends React.HTMLAttributes<HTMLHeadingElement> {}
+interface H2Props extends HTMLMotionProps<"h2"> {
+  initial?: H2AnimationOptions;
+}
 
-const H2 = ({ children, className, ...props }: H2Props) => {
+const H2 = ({ className, initial = "hidden", ...props }: H2Props) => {
   return (
-    <h2
-      {...props}
+    <motion.h2
       className={cn(
-        "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
+        "text-[3.35rem]/normal font-extrabold tracking-tight opacity-0",
         className
       )}
-    >
-      {children}
-    </h2>
+      initial={initial}
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={h2Variants}
+      {...props}
+    />
   );
 };
 

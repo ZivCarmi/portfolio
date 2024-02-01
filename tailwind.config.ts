@@ -40,6 +40,9 @@ const config = {
       },
     },
     extend: {
+      screens: {
+        tall: { raw: "(max-height: 1199px)" },
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

@@ -8,15 +8,15 @@ const MyImage: React.FC<MyImageProps> = ({ className, ...props }) => {
     <figure
       {...props}
       className={cn(
-        "w-[var(--me-image-width)] h-[var(--me-image-height)] relative border border-gray-100",
+        "w-[var(--my-image-width)] h-[var(--my-image-height)] relative border border-gray-100",
         className
       )}
     >
       <Image
         src="/me.jpg"
-        alt="Me"
+        alt="Myself - Ziv Carmi"
         quality={100}
-        className="object-cover -mt-5 -ml-4 z-10"
+        className="object-cover -mt-8 -ml-[var(--my-image-border-space)] z-10"
         fill
         priority
       />

@@ -5,7 +5,6 @@ export const projects: ProjectType[] = [
     title: "Monopolyz",
     description:
       "Enjoy classic gameplay with friends in this digital version. Buy, trade, and build your empire in a virtual world of property domination.",
-    badge: "FAVORITE",
     website: "https://socket-io-monopoly.vercel.app",
     github: "https://github.com/ZivCarmi/Socket.IO-Monopoly",
     style: {

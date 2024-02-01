@@ -2,16 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-/* :root {
-  --header-height: 11rem;
-  --me-image-width: 50vw;
-  --me-image-height: 50vw;
-} */
-
 :root {
   --header-height: 8rem;
-  --me-image-width: 17rem;
-  --me-image-height: 17.5rem;
+  --my-image-width: 19rem;
+  --my-image-height: 19.5rem;
+  --my-image-border-space: 1.8rem;
 }
 
 @layer base {
@@ -95,4 +90,44 @@
 
 header {
   height: var(--header-height);
+}
+
+html {
+  line-height: 1.1;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1600px) {
+  html {
+    font-size: 1vw;
+  }
+}
+
+@media (min-width: 768px) and (max-height: 1199px) {
+  html {
+    scroll-snap-type: y mandatory;
+    scroll-snap-stop: always;
+    scroll-behavior: smooth;
+  }
+
+  section,
+  footer {
+    scroll-snap-align: start;
+  }
+
+  section:not(#home),
+  footer {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 1601px) {
+  html {
+    font-size: 18px;
+  }
 }

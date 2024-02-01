@@ -1,18 +1,31 @@
+"use client";
+
 import { cn } from "@/lib/utils";
+import { paragraphVariants } from "@/lib/variants";
+import { ParagraphAnimationOptions } from "@/types/Animations";
+import { HTMLMotionProps, motion } from "framer-motion";
 
-interface ParagraphProps extends React.HTMLAttributes<HTMLParagraphElement> {}
+interface ParagraphProps extends HTMLMotionProps<"p"> {
+  initial?: ParagraphAnimationOptions;
+}
 
-const Paragraph = ({ children, className, ...props }: ParagraphProps) => {
+const Paragraph = ({
+  className,
+  initial = "hidden",
+  ...props
+}: ParagraphProps) => {
   return (
-    <p
-      {...props}
+    <motion.p
       className={cn(
-        "my-4 text-site-primary-foreground text-pretty sm:max-w-[32vw]",
+        "my-4 text-site-primary-foreground text-pretty sm:max-w-[32vw] leading-relaxed opacity-0",
         className
       )}
-    >
-      {children}
-    </p>
+      initial={initial}
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={paragraphVariants}
+      {...props}
+    />
   );
 };
 

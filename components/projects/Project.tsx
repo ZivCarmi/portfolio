@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Button } from "../ui/button";
 import { ProjectType } from "@/types/Project";
 import { cn } from "@/lib/utils";
+import Paragraph from "../ui/Paragraph";
 
 const Project = ({ project }: { project: ProjectType }) => {
   return (
@@ -13,11 +14,6 @@ const Project = ({ project }: { project: ProjectType }) => {
         `to-${project.style.color}-400`
       )}
     >
-      {project.badge && (
-        <span className="[writing-mode:vertical-rl] rotate-180 absolute right-[calc(100%+3px)] bottom-4 z-10 text-sm text-zinc-600">
-          {project.badge}
-        </span>
-      )}
       <h3
         className={cn(
           "text-[2.5rem] md:text-4xl font-bold tracking-wide group-hover:scale-x-110 duration-200 text-center text-balance",
@@ -32,26 +28,31 @@ const Project = ({ project }: { project: ProjectType }) => {
           `bg-${project.style.color}-500`
         )}
       >
-        <p
+        <Paragraph
           className={cn(
             "text-center text-pretty",
             `text-${project.style.color}-200`
           )}
+          initial="visible"
         >
           {project.description}
-        </p>
+        </Paragraph>
         <div className="flex items-center gap-4">
           <Button
             asChild
             variant="outline"
             className="bg-transparent rounded-full"
           >
-            <Link href={project.website} target="_blank">
+            <Link href={project.website} target="_blank" className="text-white">
               View Project
             </Link>
           </Button>
-          <Button asChild variant="link" className="rounded-full underline">
-            <Link href={project.github} target="_blank">
+          <Button
+            asChild
+            variant="link"
+            className="rounded-full underline hover:text-accent-foreground"
+          >
+            <Link href={project.github} target="_blank" className="text-white">
               On GitHub
             </Link>
           </Button>
