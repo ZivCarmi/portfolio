@@ -6,10 +6,7 @@ const Container = ({ children, className, ...props }: ContainerProps) => {
   return (
     <div
       {...props}
-      className={cn(
-        "flex items-center max-w-[1700px] w-full px-[15vw] md:px-16 lg:px-32",
-        className
-      )}
+      className={cn("w-full max-w-[1700px] px-[15vw] sm:px-28", className)}
     >
       {children}
     </div>

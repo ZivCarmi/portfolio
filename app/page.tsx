@@ -1,6 +1,6 @@
-import About from "@/components/sections/About";
-import Home from "@/components/sections/Home";
-import Projects from "@/components/sections/Projects";
+import About from "@/components/about/About";
+import Home from "@/components/home/Home";
+import Projects from "@/components/projects/Projects";
 
 const HomePage = () => {
   return (

@@ -7,7 +7,7 @@ const H2 = ({ children, className, ...props }: H2Props) => {
     <h2
       {...props}
       className={cn(
-        "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-7xl",
+        "scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl",
         className
       )}
     >

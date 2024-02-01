@@ -6,9 +6,9 @@ import Section from "../ui/Section";
 
 const About = () => {
   return (
-    <Section id="about">
-      <Container className="flex-col gap-12">
-        <Article className="self-start">
+    <Section id="about" className="items-center">
+      <Container className="flex flex-col gap-12">
+        <Article>
           <H2 className="text-site-primary text-5xl">About</H2>
           <Paragraph>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione
@@ -17,7 +17,7 @@ const About = () => {
             consequuntur obcaecati ipsam voluptatibus.
           </Paragraph>
         </Article>
-        <Article className="self-end">
+        <Article className="ml-auto">
           <H2 className="text-site-primary text-5xl">Stack</H2>
           <Paragraph>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione

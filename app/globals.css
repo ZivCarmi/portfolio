@@ -2,19 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+/* :root {
   --header-height: 11rem;
   --me-image-width: 50vw;
   --me-image-height: 50vw;
-  --me-image-back-border-height: 2.5rem;
-}
+} */
 
-@media (max-width: 768px) {
-  :root {
-    --header-height: 8rem;
-    --me-image-width: 17rem;
-    --me-image-height: 17.5rem;
-  }
+:root {
+  --header-height: 8rem;
+  --me-image-width: 17rem;
+  --me-image-height: 17.5rem;
 }
 
 @layer base {
