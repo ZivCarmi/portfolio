@@ -1,15 +1,9 @@
-import About from "@/components/about/About";
-import Home from "@/components/home/Home";
-import Projects from "@/components/projects/Projects";
+import { siteSections } from "@/lib/site-sections";
 
-const HomePage = () => {
-  return (
-    <>
-      <Home />
-      <About />
-      <Projects />
-    </>
-  );
+const Portfolio = () => {
+  return siteSections.map(({ id, Component }) => (
+    <Component key={id} id={id} />
+  ));
 };
 
-export default HomePage;
+export default Portfolio;

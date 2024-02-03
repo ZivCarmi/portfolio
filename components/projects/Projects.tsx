@@ -1,11 +1,11 @@
 import { projects } from "@/content/projects";
 import Project from "./Project";
 import Container from "../ui/Container";
-import Section from "../ui/Section";
+import Section, { SectionProps } from "../ui/Section";
 
-const Projects = () => {
+const Projects = ({ ...props }: SectionProps) => {
   return (
-    <Section id="projects" className="lg:h-auto items-center">
+    <Section {...props} className="lg:h-auto items-center">
       <Container className="flex items-center flex-col">
         <h2 className="text-xl text-center text-pretty text-zinc-600 mb-8">
           Some of my projects I've worked on.

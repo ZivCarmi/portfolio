@@ -4,7 +4,7 @@ export const projects: ProjectType[] = [
   {
     title: "Monopolyz",
     description:
-      "Enjoy classic gameplay with friends in this digital version. Buy, trade, and build your empire in a virtual world of property domination.",
+      "Classic Monopoly game with standard rules set that can be played with your friends online.",
     website: "https://socket-io-monopoly.vercel.app",
     github: "https://github.com/ZivCarmi/Socket.IO-Monopoly",
     style: {
@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
   {
     title: "Candy Crush",
     description:
-      "Enjoy classic gameplay with friends in this digital version. Buy, trade, and build your empire in a virtual world of property domination.",
+      "The famous Candy Crush game - match at least three candies with the same colors to climb up the leaderboard.",
     website: "https://react-candy-crush.vercel.app",
     github: "https://github.com/ZivCarmi/react-candy-crush",
     style: {
@@ -26,7 +26,7 @@ export const projects: ProjectType[] = [
   {
     title: "JobSearch",
     description:
-      "Enjoy classic gameplay with friends in this digital version. Buy, trade, and build your empire in a virtual world of property domination.",
+      "Job search platform enables effortless job search, application, and streamlined posting for employers.",
     website: "https://jobsearch-next.vercel.app",
     github: "https://github.com/ZivCarmi/jobsearch-next",
     style: {
@@ -37,7 +37,7 @@ export const projects: ProjectType[] = [
   {
     title: "WeatherApp",
     description:
-      "Enjoy classic gameplay with friends in this digital version. Buy, trade, and build your empire in a virtual world of property domination.",
+      "Intuitive weather app for real-time forecasts and personalized insights.",
     website: "https://weather-app-roan-phi-78.vercel.app",
     github: "https://github.com/ZivCarmi/WeatherApp",
     style: {

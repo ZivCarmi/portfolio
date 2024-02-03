@@ -17,7 +17,7 @@ const Paragraph = ({
   return (
     <motion.p
       className={cn(
-        "my-4 text-site-primary-foreground text-pretty sm:max-w-[32vw] leading-relaxed opacity-0",
+        "my-4 text-site-primary-foreground text-pretty sm:max-w-[39vw] md:max-w-[32vw] leading-relaxed",
         className
       )}
       initial={initial}

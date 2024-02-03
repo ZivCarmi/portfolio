@@ -6,22 +6,6 @@ const Header = () => {
       <Link href="/" className="text-site-secondary text-3xl">
         Ziv.dev
       </Link>
-      {/* <nav>
-          <ul className="flex gap-4">
-            <li>
-              <Link href="#home">Home</Link>
-            </li>
-            <li>
-              <Link href="#about">About</Link>
-            </li>
-            <li>
-              <Link href="#projects">Projects</Link>
-            </li>
-            <li>
-              <Link href="#contact">Contact</Link>
-            </li>
-          </ul>
-        </nav> */}
     </header>
   );
 };

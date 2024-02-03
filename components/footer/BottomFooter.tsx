@@ -1,25 +1,23 @@
 "use client";
 
 import { getCurrentYear } from "@/lib/utils";
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
+import { bottomFooterVariants } from "@/lib/variants";
+import { motion } from "framer-motion";
+import { Copyright } from "lucide-react";
 
 const BottomFooter = () => {
-  const bottomFooterRef = useRef(null);
-  const bottomFooterInView = useInView(bottomFooterRef, { once: true });
-
   return (
     <motion.p
-      className="border-t border-site-secondary pt-14 mt-32 opacity-0"
-      initial={{ y: 20 }}
-      animate={{
-        opacity: bottomFooterInView ? 1 : 0,
-        y: bottomFooterInView ? 0 : 20,
-      }}
-      transition={{ delay: 0.45, duration: 0.3 }}
-      ref={bottomFooterRef}
+      className="border-t border-site-secondary pt-14 mt-32"
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true }}
+      variants={bottomFooterVariants}
     >
-      Made By Me :) | {getCurrentYear()}{" "}
+      <span className="inline-flex items-center">
+        <Copyright size={20} className="mr-1.5" />
+        Made By Me :) | {getCurrentYear()}
+      </span>
     </motion.p>
   );
 };
