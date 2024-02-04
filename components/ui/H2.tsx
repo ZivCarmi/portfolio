@@ -13,7 +13,7 @@ const H2 = ({ className, initial = "hidden", ...props }: H2Props) => {
   return (
     <motion.h2
       className={cn(
-        "text-[3.35rem]/normal font-extrabold tracking-tight opacity-0",
+        "text-[3.35rem]/normal font-extrabold tracking-tight",
         className
       )}
       initial={initial}

@@ -3,6 +3,8 @@ import Body from "@/components/shared/Body";
 import Header from "@/components/shared/Header";
 import type { Metadata } from "next";
 import "./globals.css";
+import Header2 from "@/components/shared/Header2";
+import Container2 from "@/components/ui/Container2";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +19,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Body>
-        <Header />
+        <div className="fixed top-0 left-0 right-0 bottom-0 pointer-events-none flex justify-between px-[var(--col-gap)]">
+          {Array.from({ length: 5 }).map((_, idx) => (
+            <div key={idx} className="w-[1px] bg-border" />
+          ))}
+        </div>
+        {/* <Header /> */}
+        <Header2 />
         <main>{children}</main>
         <Footer />
       </Body>

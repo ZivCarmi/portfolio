@@ -24,7 +24,7 @@ const useIsInView = ({
           }
         });
       },
-      { threshold: 1 }
+      { threshold: 0.8 }
     );
 
     targetSections.forEach((section) => {
@@ -33,8 +33,6 @@ const useIsInView = ({
 
     return () => observer.disconnect();
   }, []);
-
-  console.log(visibleSection);
 
   return visibleSection;
 };

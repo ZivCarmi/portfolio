@@ -7,6 +7,7 @@
   --my-image-width: 19rem;
   --my-image-height: 19.5rem;
   --my-image-border-space: 1.8rem;
+  --col-gap: 2rem;
 }
 
 @layer base {
@@ -27,7 +28,8 @@
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* --muted-foreground: 215.4 16.3% 46.9%; */
+    --muted-foreground: 0deg 0% 60.78%;
 
     --accent: 210 40% 96.1%;
     --accent-foreground: 222.2 47.4% 11.2%;
@@ -35,17 +37,17 @@
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
+    --border: 214.29deg 31.82% 91.37% / 35%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
 
-    --site-primary: 248 65% 50%;
-    --site-primary-foreground: 272 65% 23%;
+    --site-primary: 0 0% 0%;
+    --site-primary-foreground: 0 0% 100%;
 
-    --site-secondary: 45 91% 67%;
-    --site-secondary-foreground: 45 95% 50%;
+    --site-secondary: 330.04 101.53% 50.86%;
+    --site-secondary-foreground: 330.04 101.53% 65.86%;
   }
 
   .dark {
@@ -110,7 +112,7 @@ html {
 }
 
 @media (min-width: 768px) and (min-height: 400px) {
-  html {
+  /* html {
     scroll-snap-stop: always;
     scroll-behavior: smooth;
     scroll-snap-type: y mandatory;
@@ -119,9 +121,14 @@ html {
   section,
   footer {
     scroll-snap-align: start;
-  }
+  } */
 
-  section:not(#home),
+  /* section:not(#home),
+  footer {
+    height: 100vh;
+  } */
+
+  section,
   footer {
     height: 100vh;
   }

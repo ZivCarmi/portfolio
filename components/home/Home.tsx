@@ -1,5 +1,3 @@
-import { AnimatePresence } from "framer-motion";
-import Navigation from "../shared/Navigation";
 import Article from "../ui/Article";
 import Container from "../ui/Container";
 import H1 from "../ui/H1";
