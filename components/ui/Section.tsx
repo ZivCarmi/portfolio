@@ -7,10 +7,7 @@ const Section = forwardRef<HTMLElement, SectionProps>(
   ({ children, className, ...props }: SectionProps, ref) => {
     return (
       <section
-        className={cn(
-          "flex justify-center mb-[7.5rem] tall:lg:h-screen",
-          className
-        )}
+        className={cn("flex justify-center mb-52", className)}
         ref={ref}
         {...props}
       >

@@ -24,7 +24,7 @@ const useIsInView = ({
           }
         });
       },
-      { threshold: 0.8 }
+      { threshold: 0.45 }
     );
 
     targetSections.forEach((section) => {

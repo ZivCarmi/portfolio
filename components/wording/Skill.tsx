@@ -11,22 +11,21 @@ interface SkillProps extends HTMLMotionProps<"div"> {
 
 const Skill = ({ className, text, ...props }: SkillProps) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { amount: 1, once: true });
+  const isInView = useInView(ref, { amount: 0.5, once: true });
 
   return (
     <>
-      <span className="sr-only">{text}</span>
       <motion.div
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={skillTextVariants}
-        className={cn("text-9xl font-bold text-pretty skill", className)}
+        className={cn("text-9xl font-bold text-pretty skill ", className)}
         aria-hidden
         {...props}
         ref={ref}
       >
         {text.split(" ").map((word, idx) => (
-          <span className="inline-block relative" key={idx}>
+          <span className="inline-block relative z-10" key={idx}>
             {word.split("").map((char, idx) => (
               <motion.span
                 key={idx}

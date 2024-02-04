@@ -8,7 +8,7 @@ const Header2 = () => {
       <Container2 className="flex justify-between items-center gap-4 h-full">
         <Link
           href="/"
-          className="text-site-secondary text-3xl font-extrabold duration-300 logo pointer-events-auto pl-2"
+          className="text-site-secondary text-3xl font-extrabold duration-300 logo pointer-events-auto pl-1"
         >
           ZIV
         </Link>

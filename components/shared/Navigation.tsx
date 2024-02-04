@@ -29,7 +29,7 @@ const Navigation = () => {
 
   return (
     <motion.nav
-      className="hidden md:block relative top-full nav pointer-events-auto pr-2"
+      className="hidden md:block relative top-full nav pointer-events-auto pr-1"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.1 }}
@@ -43,7 +43,7 @@ const Navigation = () => {
               href={`#${id}`}
               className={cn(
                 "block w-3 h-3 border-2 border-site-primary rotate-45 duration-100",
-                visibleSection === id ? "rotate-0 bg-site-primary" : ""
+                visibleSection === id ? "rotate-0 bg-site-primary current" : ""
               )}
               aria-label={`Go to ${id} section`}
             />
