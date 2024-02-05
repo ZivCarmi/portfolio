@@ -16,7 +16,7 @@ const SkillBadge = ({
     <a
       {...props}
       target="_blank"
-      className="bg-gradient-to-br from-black from-15% to-black/25 border font-medium rounded p-1 text-sm inline-flex items-center leading-4"
+      className="bg-gradient-to-br from-black from-15% to-black/25 border font-medium rounded p-1 text-base inline-flex items-center"
     >
       <Image
         src={iconSrc}

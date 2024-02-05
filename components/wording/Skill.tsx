@@ -25,7 +25,7 @@ const Skill = ({ className, text, ...props }: SkillProps) => {
         ref={ref}
       >
         {text.split(" ").map((word, idx) => (
-          <span className="inline-block relative z-10" key={idx}>
+          <span className="inline-block relative z-50" key={idx}>
             {word.split("").map((char, idx) => (
               <motion.span
                 key={idx}

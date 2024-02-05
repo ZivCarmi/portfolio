@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 :root {
-  --header-height: 8rem;
+  --header-height: 5.2rem;
   --my-image-width: 19rem;
   --my-image-height: 19.5rem;
   --my-image-border-space: 1.8rem;
   --col-gap: 2rem;
+  --bg-bg: hsl(var(--background));
 }
 
 @layer base {
@@ -15,11 +16,11 @@
     --background: 0 0% 96%;
     --foreground: 222.2 84% 4.9%;
 
-    --card: 0 0% 96%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0 5%;
+    --card-foreground: 0 0% 96%;
 
-    --popover: 0 0% 96%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0 5%;
+    --popover-foreground: 0 0% 96%;
 
     --primary: 222.2 47.4% 11.2%;
     --primary-foreground: 210 40% 98%;
@@ -28,7 +29,6 @@
     --secondary-foreground: 222.2 47.4% 11.2%;
 
     --muted: 210 40% 96.1%;
-    /* --muted-foreground: 215.4 16.3% 46.9%; */
     --muted-foreground: 0deg 0% 60.78%;
 
     --accent: 210 40% 96.1%;
@@ -54,11 +54,11 @@
     --background: 0 0 5%;
     --foreground: 210 40% 98%;
 
-    --card: 0 0 0%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 40% 98%;
+    --card-foreground: 0 0 5%;
 
-    --popover: 0 0 0%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 40% 98%;
+    --popover-foreground: 0 0 5%;
 
     --primary: 210 40% 98%;
     --primary-foreground: 222.2 47.4% 11.2%;
@@ -70,7 +70,8 @@
     --muted-foreground: 215 20.2% 65.1%;
 
     --accent: 0 0 15%;
-    --accent-foreground: 210 40% 98%;
+    /* --accent-foreground: 210 40% 98%; */
+    --accent-foreground: 330.04 101.53% 50.86%;
 
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
@@ -96,12 +97,16 @@ header {
 
 html {
   line-height: 1.1;
-  font-size: 12px;
+  font-size: 1.8vw;
+}
+
+a:hover {
+  @apply text-site-secondary;
 }
 
 @media (min-width: 640px) {
   html {
-    font-size: 1.2vw;
+    font-size: 1.5vw;
   }
 }
 

@@ -11,7 +11,7 @@ const skills = [
 const Wording = ({ ...props }: SectionProps) => {
   return (
     <Section {...props} className="justify-normal tall:lg:h-auto">
-      <Container2 className="w-[76%]">
+      <Container2 className="md:w-[76%]">
         <div className="sr-only">
           {skills.map(({ id, text }) => (
             <span className="sr-only" key={id}>
@@ -19,7 +19,7 @@ const Wording = ({ ...props }: SectionProps) => {
             </span>
           ))}
         </div>
-        <div className=" space-y-32">
+        <div className="space-y-32">
           {skills.map(({ id, text }) => (
             <Skill key={id} text={text} />
           ))}

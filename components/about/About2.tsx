@@ -1,19 +1,20 @@
-import SkillsMarquee from "./SkillsMarquee";
 import Container2 from "../ui/Container2";
-import H2 from "../ui/H2";
 import Paragraph from "../ui/Paragraph";
 import Section, { SectionProps } from "../ui/Section";
+import AboutArticle from "./AboutArticle";
+import AboutTitle from "./AboutTitle";
 import SkillBadge from "./SkillBadge";
+import SkillsMarquee from "./SkillsMarquee";
 
 const About2 = ({ ...props }: SectionProps) => {
   return (
     <Section {...props} className="items-center relative">
       <Container2 className="flex flex-col gap-12">
-        <article className="sm:ml-auto w-1/2 relative z-10">
-          <H2 className="text-foreground border-t border-b w-1/2 p-1">
+        <AboutArticle className="sm:ml-auto">
+          <AboutTitle>
             Hi! <span className="text-site-secondary">~</span> I'm Ziv
-          </H2>
-          <Paragraph className="mb-0 text-3xl leading-[1.4] p-1">
+          </AboutTitle>
+          <Paragraph className="mb-0 text-3xl leading-[1.4] px-col-gap">
             Since I embarked on my journey in 2019, I have been actively
             pursuing my desire and passion to craft complex yet beautiful user
             interfaces from scratch. Committed to staying at the forefront of
@@ -21,13 +22,11 @@ const About2 = ({ ...props }: SectionProps) => {
             new skills and staying informed about the latest advancements in
             design and technology.
           </Paragraph>
-        </article>
+        </AboutArticle>
         <SkillsMarquee />
-        <article className="w-1/2 relative z-10">
-          <H2 className="text-foreground border-t border-b w-1/2 p-1">
-            DEVELOPMENT
-          </H2>
-          <Paragraph className="mb-0 text-3xl leading-[1.4] p-1">
+        <AboutArticle>
+          <AboutTitle>Development</AboutTitle>
+          <Paragraph className="mb-0 text-3xl leading-[1.4] px-col-gap">
             Embracing a diverse technology stack centered around JavaScript, I
             specialize in creating dynamic and visually appealing user
             interfaces using{" "}
@@ -56,9 +55,8 @@ const About2 = ({ ...props }: SectionProps) => {
             </SkillBadge>{" "}
             for enhanced scalability and optimal performance.
           </Paragraph>
-        </article>
+        </AboutArticle>
       </Container2>
-      {/* <div className="absolute bottom-1/2 left-0 -translate-y-1/2 w-96 h-96 bg-gradient-to-br from-site-secondary/20 from-20% to-site-secondary/75 to-80%" /> */}
     </Section>
   );
 };

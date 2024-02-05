@@ -29,7 +29,7 @@ const Navigation = () => {
 
   return (
     <motion.nav
-      className="hidden md:block relative top-full nav pointer-events-auto pr-1"
+      className="hidden md:block absolute top-[calc(100%+(var(--col-gap)/2))] right-[var(--col-gap)] nav pointer-events-auto pr-1"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ delay: 0.1 }}

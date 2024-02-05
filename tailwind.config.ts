@@ -40,6 +40,9 @@ const config = {
       },
     },
     extend: {
+      spacing: {
+        "col-gap": "var(--col-gap)",
+      },
       screens: {
         tall: { raw: "(max-height: 1199px)" },
       },
@@ -89,6 +92,7 @@ const config = {
       },
       boxShadow: {
         sharp: "0px 0px 11px 0px #000000",
+        rough: "0px 110px 180px 0px #000000",
       },
       keyframes: {
         "accordion-down": {
