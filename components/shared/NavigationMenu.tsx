@@ -1,7 +1,7 @@
 "use client";
 
 import { AnimatePresence } from "framer-motion";
-import Navigation from "../shared/Navigation";
+import Navigation from "./Navigation";
 
 const NavigationMenu = () => {
   return (

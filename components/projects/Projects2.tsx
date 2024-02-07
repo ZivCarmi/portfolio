@@ -9,7 +9,7 @@ const Projects2 = ({ ...props }: SectionProps) => {
       <Container2>
         <div className="mx-auto w-full md:w-1/2">
           <h2 className="text-xl text-center text-pretty text-zinc-600 mb-[calc(var(--col-gap)*2)] border-t border-b py-4 relative z-50">
-            Some of my projects I've worked on.
+            Some of my projects I&apos;ve worked on.
           </h2>
           <div className="grid grid-cols-[repeat(2,1fr)] w-full gap-y-col-gap">
             {projects.map((project) => (

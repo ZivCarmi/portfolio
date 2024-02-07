@@ -3,9 +3,9 @@ import Section, { SectionProps } from "../ui/Section";
 import Skill from "./Skill";
 
 const skills = [
-  { id: 1, text: "FRONTEND EXPERT" },
-  { id: 2, text: "PIXEL PERFECT DELIVERY" },
-  { id: 3, text: "CREATIVE THINKING" },
+  { id: 1, text: "Frontend Expert." },
+  { id: 2, text: "Pixel Perfect Delivery." },
+  { id: 3, text: "Creative Thinking." },
 ];
 
 const Wording = ({ ...props }: SectionProps) => {
@@ -19,7 +19,7 @@ const Wording = ({ ...props }: SectionProps) => {
             </span>
           ))}
         </div>
-        <div className="space-y-32">
+        <div className="space-y-44">
           {skills.map(({ id, text }) => (
             <Skill key={id} text={text} />
           ))}

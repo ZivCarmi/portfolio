@@ -12,7 +12,7 @@ const About2 = ({ ...props }: SectionProps) => {
       <Container2 className="flex flex-col gap-12">
         <AboutArticle className="sm:ml-auto">
           <AboutTitle>
-            Hi! <span className="text-site-secondary">~</span> I'm Ziv
+            Hi! <span className="text-site-secondary">~</span> I&apos;m Ziv
           </AboutTitle>
           <Paragraph className="mb-0 text-3xl leading-[1.4] px-col-gap">
             Since I embarked on my journey in 2019, I have been actively

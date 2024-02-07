@@ -8,7 +8,6 @@
   --my-image-height: 19.5rem;
   --my-image-border-space: 1.8rem;
   --col-gap: 2rem;
-  --bg-bg: hsl(var(--background));
 }
 
 @layer base {

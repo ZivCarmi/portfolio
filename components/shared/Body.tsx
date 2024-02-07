@@ -1,9 +1,7 @@
 "use client";
 
 import useIsInView from "@/hooks/useIsInView";
-import { inView } from "framer-motion";
 import { Inter } from "next/font/google";
-import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 

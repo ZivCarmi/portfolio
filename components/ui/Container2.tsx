@@ -13,4 +13,6 @@ const Container2 = forwardRef<HTMLDivElement, ContainerProps>(
   }
 );
 
+Container2.displayName = "Container2";
+
 export default Container2;

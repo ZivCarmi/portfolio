@@ -10,7 +10,7 @@ const About = ({ ...props }: SectionProps) => {
     <Section {...props} className="items-center">
       <Container className="flex flex-col gap-12 sm:gap-0">
         <Article>
-          <H2 className="text-site-primary">Hi! ~ I'm Ziv</H2>
+          <H2 className="text-site-primary">Hi! ~ I&apos;m Ziv</H2>
           <Paragraph>
             Since I embarked on my journey in 2019, I have been actively
             pursuing my desire and passion to craft complex yet beautiful user

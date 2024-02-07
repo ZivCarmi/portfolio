@@ -19,20 +19,30 @@ const Skill = ({ className, text, ...props }: SkillProps) => {
         initial="hidden"
         animate={isInView ? "visible" : "hidden"}
         variants={skillTextVariants}
-        className={cn("text-9xl font-bold text-pretty skill ", className)}
+        className={cn(
+          "text-[250px] font-bold text-pretty skill text-site-secondary",
+          className
+        )}
         aria-hidden
         {...props}
         ref={ref}
       >
         {text.split(" ").map((word, idx) => (
-          <span className="inline-block relative z-50" key={idx}>
+          <span
+            key={idx}
+            className="inline-block relative z-50 tracking-tighter"
+          >
             {word.split("").map((char, idx) => (
               <motion.span
                 key={idx}
                 className="inline-block"
                 variants={skillCharacterVariant}
               >
-                {char}
+                {char === "." ? (
+                  <motion.span className="text-white">{char}</motion.span>
+                ) : (
+                  char
+                )}
               </motion.span>
             ))}
             <span className="inline-block">&nbsp;</span>

@@ -5,7 +5,7 @@ import Paragraph from "../ui/Paragraph";
 import Section, { SectionProps } from "../ui/Section";
 import Expertises from "./Expertises";
 import MyImage from "./MyImage";
-import NavigationMenu from "./NavigationMenu";
+import NavigationMenu from "../shared/NavigationMenu";
 
 const Home = ({ ...props }: SectionProps) => {
   return (

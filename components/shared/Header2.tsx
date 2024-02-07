@@ -2,7 +2,7 @@
 
 import { inView, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
-import NavigationMenu from "../home/NavigationMenu";
+import NavigationMenu from "./NavigationMenu";
 import Container2 from "../ui/Container2";
 import { useState } from "react";
 import GridLayout from "../ui/GridLayout";

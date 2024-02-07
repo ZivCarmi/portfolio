@@ -11,10 +11,8 @@ const ModeToggle = () => {
   return (
     <div className="flex items-center border rounded-full p-1 w-fit ml-auto">
       <span className="sr-only">Toggle theme</span>
-      {modeIcons.map(({ mode, Icon }) => (
-        <ModeButton key={mode} mode={mode}>
-          <Icon className="w-4 h-4" />
-        </ModeButton>
+      {modeIcons.map((modeIcon) => (
+        <ModeButton key={modeIcon.mode} {...modeIcon} />
       ))}
     </div>
   );
