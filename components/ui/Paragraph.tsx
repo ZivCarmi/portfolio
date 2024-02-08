@@ -3,7 +3,7 @@
 import { cn } from "@/lib/utils";
 import { HTMLMotionProps, motion } from "framer-motion";
 
-interface ParagraphProps extends HTMLMotionProps<"p"> {}
+export interface ParagraphProps extends HTMLMotionProps<"p"> {}
 
 const Paragraph = ({ className, ...props }: ParagraphProps) => {
   return (
@@ -12,7 +12,6 @@ const Paragraph = ({ className, ...props }: ParagraphProps) => {
         "my-4 text-foreground text-pretty leading-relaxed",
         className
       )}
-      viewport={{ once: true }}
       {...props}
     />
   );

@@ -1,11 +1,10 @@
 "use client";
 
-import { cn, getCurrentYear } from "@/lib/utils";
-import { bottomFooterVariants } from "@/lib/variants";
-import { HTMLMotionProps, motion } from "framer-motion";
+import { getCurrentYear } from "@/lib/utils";
 import { Copyright } from "lucide-react";
 import dynamic from "next/dynamic";
-import Container2 from "../ui/Container2";
+import Container from "../ui/Container";
+import BottomFooterColumn from "./BottomFooterColumn";
 
 const ModeToggle = dynamic(() => import("../ui/mode-toggle"), {
   ssr: false,
@@ -14,7 +13,7 @@ const ModeToggle = dynamic(() => import("../ui/mode-toggle"), {
 const BottomFooter = () => {
   return (
     <div className="pt-14 mt-32 border-t">
-      <Container2 className="flex items-center">
+      <Container className="flex items-center">
         <BottomFooterColumn>
           <span className="inline-flex items-center">
             <Copyright className="mr-1.5 w-5 h-5" />
@@ -29,23 +28,8 @@ const BottomFooter = () => {
         <BottomFooterColumn className="ml-auto">
           <ModeToggle />
         </BottomFooterColumn>
-      </Container2>
+      </Container>
     </div>
-  );
-};
-
-interface BottomFooterColumn extends HTMLMotionProps<"div"> {}
-
-const BottomFooterColumn = ({ className, ...props }: BottomFooterColumn) => {
-  return (
-    <motion.div
-      className={cn("w-1/4 px-col-gap", className)}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true }}
-      variants={bottomFooterVariants}
-      {...props}
-    />
   );
 };
 

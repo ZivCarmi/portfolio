@@ -3,8 +3,5 @@ export type ProjectType = {
   description: string;
   github: string;
   website: string;
-  style: {
-    gradientDirection: "t" | "tr" | "tl" | "b" | "br" | "bl" | "r" | "l";
-    color: string;
-  };
+  tags: string[];
 };

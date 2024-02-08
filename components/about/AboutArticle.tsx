@@ -4,10 +4,7 @@ interface AboutArticleProps extends React.HTMLAttributes<HTMLElement> {}
 
 const AboutArticle = ({ children, className, ...props }: AboutArticleProps) => {
   return (
-    <article
-      {...props}
-      className={cn("w-full md:w-3/4 lg:w-1/2 relative z-50", className)}
-    >
+    <article {...props} className={cn("relative z-50", className)}>
       {children}
     </article>
   );

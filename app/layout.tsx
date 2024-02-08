@@ -1,6 +1,6 @@
 import Footer from "@/components/footer/Footer";
 import Body from "@/components/shared/Body";
-import Header2 from "@/components/shared/Header2";
+import Header from "@/components/shared/Header";
 import GridLayout from "@/components/ui/GridLayout";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
@@ -26,7 +26,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <GridLayout />
-          <Header2 />
+          <Header />
           <main>{children}</main>
           <Footer />
         </ThemeProvider>

@@ -11,7 +11,7 @@ const container: Variants = {
     clipPath: "inset(0)",
     transition: {
       type: "cubic-bezier(0,.57,.55,1)",
-      delay: 1,
+      delay: 0.8,
       duration: 1,
     },
   },
@@ -23,6 +23,7 @@ const EntryText = () => {
       className="text-background text-xl m-0 font-medium"
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       variants={container}
     >
       <span className="font-bold">I like to create</span> seamless and immersive

@@ -53,7 +53,7 @@
     --background: 0 0 5%;
     --foreground: 210 40% 98%;
 
-    --card: 210 40% 98%;
+    --card: 0 0% 82.5%;
     --card-foreground: 0 0 5%;
 
     --popover: 210 40% 98%;
@@ -69,7 +69,6 @@
     --muted-foreground: 215 20.2% 65.1%;
 
     --accent: 0 0 15%;
-    /* --accent-foreground: 210 40% 98%; */
     --accent-foreground: 330.04 101.53% 50.86%;
 
     --destructive: 0 62.8% 30.6%;
@@ -113,29 +112,6 @@ a:hover {
   html {
     font-size: 1vw;
   }
-}
-
-@media (min-width: 768px) and (min-height: 400px) {
-  /* html {
-    scroll-snap-stop: always;
-    scroll-behavior: smooth;
-    scroll-snap-type: y mandatory;
-  }
-
-  section,
-  footer {
-    scroll-snap-align: start;
-  } */
-
-  /* section:not(#home),
-  footer {
-    height: 100vh;
-  } */
-
-  /* section,
-  footer {
-    height: 100vh;
-  } */
 }
 
 @media (min-width: 1601px) {

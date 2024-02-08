@@ -8,9 +8,6 @@ const container: Variants = {
   },
   visible: {
     opacity: 1,
-    transition: {
-      staggerChildren: 0.2,
-    },
   },
 };
 
@@ -30,8 +27,8 @@ const children: Variants = {
     transformOrigin: "top",
     transition: {
       type: "cubic-bezier(.15,.7,.78,1)",
-      duration: 1,
-      delayChildren: 1.3,
+      duration: 0.8,
+      when: "beforeChildren",
     },
   },
 };
@@ -46,7 +43,6 @@ const dotVariant: Variants = {
     x: 0,
     transition: {
       type: "cubic-bezier(.15,.7,.78,1)",
-      delay: 1,
       duration: 0.8,
     },
   },
@@ -59,10 +55,11 @@ const Title = () => {
     <motion.h1
       className="font-extrabold tracking-wide text-site-secondary text-9xl p-1"
       aria-label="Full Stack Developer"
-      variants={container}
       initial="hidden"
       whileInView="visible"
+      viewport={{ once: true }}
       style={{ willChange }}
+      variants={container}
     >
       <motion.div variants={children}>Full Stack</motion.div>
       <motion.div className="ml-20" variants={children}>

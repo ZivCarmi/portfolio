@@ -2,7 +2,7 @@ import Marquee from "react-fast-marquee";
 
 const SkillsMarquee = () => {
   return (
-    <div className="flex-col overflow-hidden py-20 my-28">
+    <div className="flex-col overflow-hidden py-20 my-28 w-full">
       <div className="relative z-[60] -rotate-[3deg] bg-popover w-[120%] -ml-[10%] mb-2">
         <Marquee
           speed={100}
