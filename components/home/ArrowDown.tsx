@@ -9,41 +9,28 @@ const container: Variants = {
   },
   visible: {
     opacity: 1,
-    transition: {},
-  },
-};
-
-const children: Variants = {
-  visible: {
+    y: ["30%", "10%"],
     transition: {
-      type: "spring",
-      repeat: Infinity,
-      bounce: 2,
+      delay: 1.75,
+      y: {
+        repeatType: "reverse",
+        duration: 0.6,
+        ease: "circOut",
+        repeat: Infinity,
+      },
     },
   },
 };
 
-const MotionArrow = motion(ImArrowDown);
-
 const ArrowDown = () => {
   return (
-    <motion.div variants={container} whileInView="visible" initial="hidden">
-      <motion.div
-        className="absolute top-1/2 left-[calc(62.5%-4rem)] border-4 rounded-full border-site-secondary mix-blend-difference w-32 h-32 flex items-center justify-center"
-        transition={{
-          y: {
-            repeatType: "reverse",
-            duration: 0.8,
-            ease: "easeOut",
-            repeat: Infinity,
-          },
-        }}
-        animate={{
-          y: ["30%", "10%"],
-        }}
-      >
-        <MotionArrow className="mix-blend-difference text-site-secondary w-20 h-20" />
-      </motion.div>
+    <motion.div
+      className="absolute top-full left-[calc(62.5%-2.5rem)] flex items-center justify-center mix-blend-difference"
+      initial="hidden"
+      animate="visible"
+      variants={container}
+    >
+      <ImArrowDown className="text-site-secondary w-20 h-20" />
     </motion.div>
   );
 };

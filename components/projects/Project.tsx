@@ -14,7 +14,7 @@ type ProjectProps = {
 const Project3 = ({ project, index }: ProjectProps) => {
   return (
     <div className="relative px-col-gap">
-      <div className="outline outline-1 -outline-offset-1 outline-site-secondary group rounded-md">
+      <div className="outline outline-1 -outline-offset-1 outline-site-secondary group rounded-[calc(var(--radius)-1px)]">
         <div className="flex flex-col rounded-md min-h-96 p-col-gap relative bg-card duration-300 group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:z-10">
           <ul className="flex items-center flex-wrap gap-1 mb-8">
             <li>
@@ -30,10 +30,10 @@ const Project3 = ({ project, index }: ProjectProps) => {
               </li>
             ))}
           </ul>
-          <h3 className="text-[2.5rem] md:text-4xl font-bold tracking-wide text-balance text-card-foreground">
+          <h3 className="text-[2.5rem] md:text-4xl font-bold tracking-wide text-balance text-card-foreground mb-6">
             {project.title}
           </h3>
-          <Paragraph className="m-0 text-pretty text-card-foreground">
+          <Paragraph className="m-0 text-pretty font-medium text-card-foreground/50">
             {project.description}
           </Paragraph>
           <div className="mt-auto flex justify-between">
@@ -41,20 +41,15 @@ const Project3 = ({ project, index }: ProjectProps) => {
               <Link
                 href={project.github}
                 target="_blank"
-                className="flex items-center sm:duration-700 sm:translate-y-3 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:translate-y-0"
+                className="flex items-center text-card-foreground/70 sm:duration-700 sm:translate-y-3 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:translate-y-0"
               >
-                <ChevronLeft className="w-5 h-5" />
+                <ChevronLeft className="w-4 h-4" />
                 On GitHub
               </Link>
             </div>
-            <Button
-              asChild
-              variant="outline"
-              size="icon"
-              className="rounded-full"
-            >
+            <Button asChild size="icon" className="rounded-full">
               <Link href={project.website} target="_blank">
-                <ChevronRight className="w-5 h-5" />
+                <ChevronRight className="w-6 h-6" />
               </Link>
             </Button>
           </div>

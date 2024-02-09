@@ -8,6 +8,9 @@ const container: Variants = {
   },
   visible: {
     opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
   },
 };
 
@@ -26,8 +29,8 @@ const children: Variants = {
     rotateY: 0,
     transformOrigin: "top",
     transition: {
-      type: "cubic-bezier(.15,.7,.78,1)",
-      duration: 0.8,
+      ease: [0.33, 1, 0.68, 1],
+      duration: 1,
       when: "beforeChildren",
     },
   },
@@ -42,7 +45,6 @@ const dotVariant: Variants = {
     opacity: 1,
     x: 0,
     transition: {
-      type: "cubic-bezier(.15,.7,.78,1)",
       duration: 0.8,
     },
   },

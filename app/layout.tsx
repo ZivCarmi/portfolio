@@ -1,10 +1,12 @@
 import Footer from "@/components/footer/Footer";
-import Body from "@/components/shared/Body";
 import Header from "@/components/shared/Header";
 import GridLayout from "@/components/ui/GridLayout";
 import { ThemeProvider } from "@/components/ui/theme-provider";
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -18,7 +20,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Body>
+      <body className={inter.className}>
         <ThemeProvider
           attribute="class"
           defaultTheme="system"
@@ -30,7 +32,7 @@ export default function RootLayout({
           <main>{children}</main>
           <Footer />
         </ThemeProvider>
-      </Body>
+      </body>
     </html>
   );
 }
