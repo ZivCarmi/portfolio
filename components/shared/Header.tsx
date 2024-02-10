@@ -60,7 +60,7 @@ const Header2 = () => {
           href="/"
           className="text-site-secondary text-3xl font-extrabold duration-300 logo pointer-events-auto pl-1"
         >
-          ZIV
+          ZIVI
         </Link>
         <NavigationMenu />
       </Container>
