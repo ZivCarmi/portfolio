@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Socials from "../shared/Socials";
 import Container from "../ui/Container";
+import TopFooterColumn from "./TopFooterColumn";
 
 export const topFooterVariants = {
   visible: {
@@ -19,31 +20,17 @@ export const topFooterVariants = {
 
 const TopFooter = () => {
   return (
-    <Container className="leading-[2.8] sm:text-lg flex">
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={topFooterVariants}
-        className="sm:w-1/4 px-col-gap"
-      >
-        <h2 className="tracking-[0.28rem] text-zinc-300">CONTACT</h2>
+    <Container className="sm:text-lg flex">
+      <TopFooterColumn title="CONTACT">
         <ul>
           <li>
             <Link href="mailto:carmi.ziv@gmail.com">carmi.ziv@gmail.com</Link>
           </li>
         </ul>
-      </motion.div>
-      <motion.div
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true }}
-        variants={topFooterVariants}
-        className="sm:w-1/4 px-col-gap"
-      >
-        <h2 className="tracking-[0.28rem] text-zinc-300">FIND ME</h2>
-        <Socials />
-      </motion.div>
+      </TopFooterColumn>
+      <TopFooterColumn title="CONTACT">
+        <Socials className="space-y-4" />
+      </TopFooterColumn>
     </Container>
   );
 };

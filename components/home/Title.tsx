@@ -55,7 +55,7 @@ const Title = () => {
 
   return (
     <motion.h1
-      className="font-extrabold tracking-wide text-site-secondary text-9xl p-1"
+      className="font-extrabold tracking-wide text-site-secondary text-[7.8rem]/none sm:text-9xl p-1"
       aria-label="Full Stack Developer"
       initial="hidden"
       whileInView="visible"

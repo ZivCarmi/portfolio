@@ -2,6 +2,21 @@ import Marquee from "react-fast-marquee";
 import BottomFooter from "./BottomFooter";
 import TopFooter from "./TopFooter";
 
+const greetings = [
+  "שלום",
+  "PEACE",
+  "こんにちは",
+  "CIAO",
+  "Хей",
+  "Hoi",
+  "अरे",
+  "سلام",
+  "Cześć",
+  "Hei",
+  "Bonjour",
+  "Привет",
+];
+
 const Footer = () => {
   return (
     <footer className="pb-14" id="footer">
@@ -12,30 +27,12 @@ const Footer = () => {
           autoFill
           className="top-7 overflow-hidden"
         >
-          <div className="text-7xl font-bold">שלום</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">PEACE</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">こんにちは</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">CIAO</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Хей</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Hoi</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">अरे</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">سلام</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Cześć</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Hei</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Bonjour</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
-          <div className="text-7xl font-bold">Привет</div>
-          <span className="text-7xl mx-10 font-bold">&#8211;</span>
+          {greetings.map((greet) => (
+            <>
+              <div className="text-7xl font-bold">{greet}</div>
+              <span className="text-7xl mx-10 font-bold">&#8211;</span>
+            </>
+          ))}
         </Marquee>
       </div>
       <TopFooter />
