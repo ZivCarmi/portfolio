@@ -64,7 +64,7 @@ const Title = () => {
       variants={container}
     >
       <motion.div variants={children}>Full Stack</motion.div>
-      <motion.div className="ml-20" variants={children}>
+      <motion.div className="ml-10 sm:ml-20" variants={children}>
         Developer
         <motion.div
           className="text-white inline-block"

@@ -2,14 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --header-height: 5.2rem;
-  --my-image-width: 19rem;
-  --my-image-height: 19.5rem;
-  --my-image-border-space: 1.8rem;
-  --col-gap: 2rem;
-}
-
 @layer base {
   :root {
     --background: 0 0% 96%;
@@ -80,12 +72,20 @@
   }
 }
 
+:root {
+  --header-height: 5.2rem;
+  --col-gap: 1.25rem;
+}
+
 @layer base {
   * {
     @apply border-border;
   }
   body {
     @apply bg-background text-foreground;
+  }
+  a:hover {
+    @apply text-site-secondary;
   }
 }
 
@@ -94,15 +94,14 @@ header {
 }
 
 html {
-  line-height: 1.1;
-  font-size: 1.8vw;
-}
-
-a:hover {
-  @apply text-site-secondary;
+  font-size: 2vw;
 }
 
 @media (min-width: 640px) {
+  :root {
+    --col-gap: 2rem;
+  }
+
   html {
     font-size: 1.5vw;
   }
@@ -110,7 +109,7 @@ a:hover {
 
 @media (min-width: 768px) and (max-width: 1600px) {
   html {
-    font-size: 1vw;
+    font-size: 1.1vw;
   }
 }
 
@@ -118,12 +117,4 @@ a:hover {
   html {
     font-size: 18px;
   }
-}
-
-html body:not([data-active-section="home"]) .nav a {
-  @apply border-site-secondary;
-}
-
-html body:not([data-active-section="home"]) .nav .current {
-  @apply bg-site-secondary;
 }

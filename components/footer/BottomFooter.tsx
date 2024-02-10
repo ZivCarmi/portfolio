@@ -13,10 +13,10 @@ const ModeToggle = dynamic(() => import("../ui/mode-toggle"), {
 const BottomFooter = () => {
   return (
     <div className="pt-14 mt-32 border-t">
-      <Container className="flex items-center">
+      <Container className="flex items-center justify-between sm:justify-normal">
         <BottomFooterColumn>
           <span className="inline-flex items-center">
-            <Copyright className="mr-1.5 w-5 h-5" />
+            <Copyright className="mr-1.5 w-4 h-4" />
             {getCurrentYear()}
           </span>
         </BottomFooterColumn>
@@ -25,7 +25,7 @@ const BottomFooter = () => {
             Made By Me <span className="text-site-secondary">:)</span>
           </span>
         </BottomFooterColumn>
-        <BottomFooterColumn className="ml-auto">
+        <BottomFooterColumn className="sm:ml-auto">
           <ModeToggle />
         </BottomFooterColumn>
       </Container>

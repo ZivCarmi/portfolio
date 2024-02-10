@@ -25,7 +25,7 @@ const container: Variants = {
 const ArrowDown = () => {
   return (
     <motion.div
-      className="absolute top-full left-[calc(62.5%-2.5rem)] flex items-center justify-center mix-blend-difference"
+      className="absolute top-[95%] left-[calc(50%-2.5rem)] md:top-full md:left-[calc(62.5%-2.5rem)] flex items-center justify-center mix-blend-difference"
       initial="hidden"
       animate="visible"
       variants={container}

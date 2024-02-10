@@ -14,7 +14,7 @@ const Home = ({ ...props }: SectionProps) => {
         <Container className="md:w-[62.5%] md:pr-0 relative z-50">
           <Title />
         </Container>
-        <div className="relative">
+        <div className="md:relative">
           <Container className="bg-site-secondary md:bg-transparent py-24 md:py-0 flex items-center justify-center">
             <div className="sm:w-1/2 md:w-1/4 ml-auto border-t border-b border-border p-1 relative">
               <EntryText />

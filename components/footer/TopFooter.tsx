@@ -19,13 +19,13 @@ export const topFooterVariants = {
 
 const TopFooter = () => {
   return (
-    <Container className="text-lg/[2.8] flex">
+    <Container className="leading-[2.8] sm:text-lg flex">
       <motion.div
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
         variants={topFooterVariants}
-        className="w-1/4 px-col-gap"
+        className="sm:w-1/4 px-col-gap"
       >
         <h2 className="tracking-[0.28rem] text-zinc-300">CONTACT</h2>
         <ul>
@@ -39,7 +39,7 @@ const TopFooter = () => {
         whileInView="visible"
         viewport={{ once: true }}
         variants={topFooterVariants}
-        className="w-1/4 px-col-gap"
+        className="sm:w-1/4 px-col-gap"
       >
         <h2 className="tracking-[0.28rem] text-zinc-300">FIND ME</h2>
         <Socials />

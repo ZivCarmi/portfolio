@@ -2,22 +2,21 @@
 
 import { inView, motion, useMotionValueEvent, useScroll } from "framer-motion";
 import Link from "next/link";
-import NavigationMenu from "./NavigationMenu";
+import { useEffect, useState } from "react";
 import Container from "../ui/Container";
-import { useState } from "react";
 import GridLayout from "../ui/GridLayout";
 
-const Header2 = () => {
+const Header = () => {
   const { scrollY } = useScroll();
   const [isScrollingDown, setIsScrollingDown] = useState(false);
-  const [isHomeInView, setIsHomeInView] = useState(true);
+  const [isHomeInView, setIsHomeInView] = useState(false);
 
-  if (typeof document !== "undefined") {
+  useEffect(() => {
     inView("section#home", () => {
       setIsHomeInView(true);
       return () => setIsHomeInView(false);
     });
-  }
+  }, []);
 
   useMotionValueEvent(scrollY, "change", (latest) => {
     const prevScrollValue = scrollY.getPrevious();
@@ -47,12 +46,13 @@ const Header2 = () => {
 
   return (
     <motion.header
-      className={`fixed top-0 left-0 right-0 bottom-0 z-[300] pointer-events-none border-b transition-colors duration-500 ${
+      className={`fixed top-0 right-0 left-0 z-[300] pointer-events-none border-b transition-colors duration-500 bg-background ${
         isHomeInView ? "bg-transparent" : "bg-background"
       }`}
       initial="hidden"
       animate="visible"
       variants={variant}
+      id="header"
     >
       <GridLayout className="absolute" />
       <Container className="flex justify-between items-center gap-4 h-full">
@@ -62,10 +62,10 @@ const Header2 = () => {
         >
           ZIVI
         </Link>
-        <NavigationMenu />
+        {/* <NavigationMenu /> */}
       </Container>
     </motion.header>
   );
 };
 
-export default Header2;
+export default Header;

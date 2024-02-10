@@ -20,7 +20,7 @@ export const bottomFooterVariants = {
 const BottomFooterColumn = ({ className, ...props }: BottomFooterColumn) => {
   return (
     <motion.div
-      className={cn("w-1/4 px-col-gap", className)}
+      className={cn("sm:w-1/4 px-col-gap", className)}
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

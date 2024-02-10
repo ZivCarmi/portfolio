@@ -42,7 +42,7 @@ const Skill = ({ className, text, ...props }: SkillProps) => {
       animate={isInView ? "visible" : "hidden"}
       variants={skillTextVariants}
       className={cn(
-        "text-[12rem] font-bold text-pretty skill text-site-secondary",
+        "text-9xl/[1.1] sm:text-[12rem]/[1.1] font-bold text-pretty skill text-site-secondary",
         className
       )}
       aria-hidden
