@@ -44,6 +44,12 @@ const Header = () => {
     },
   };
 
+  const scrollToTop = (e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) => {
+    e.preventDefault();
+
+    window.scrollTo({ behavior: "smooth", top: 0 });
+  };
+
   return (
     <motion.header
       className={`fixed top-0 right-0 left-0 z-[300] pointer-events-none border-b transition-colors duration-500 bg-background ${
@@ -57,12 +63,12 @@ const Header = () => {
       <GridLayout className="absolute" />
       <Container className="flex justify-between items-center gap-4 h-full">
         <Link
+          onClick={(e) => scrollToTop(e)}
           href="/"
           className="text-site-secondary text-3xl font-extrabold duration-300 logo pointer-events-auto pl-1"
         >
           ZIVI
         </Link>
-        {/* <NavigationMenu /> */}
       </Container>
     </motion.header>
   );
