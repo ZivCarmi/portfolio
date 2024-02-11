@@ -1,6 +1,7 @@
 import Marquee from "react-fast-marquee";
 import BottomFooter from "./BottomFooter";
 import TopFooter from "./TopFooter";
+import { Fragment } from "react";
 
 const greetings = [
   "שלום",
@@ -28,10 +29,10 @@ const Footer = () => {
           className="top-7 overflow-hidden"
         >
           {greetings.map((greet) => (
-            <>
+            <Fragment key={greet}>
               <div className="text-7xl font-bold">{greet}</div>
               <span className="text-7xl mx-10 font-bold">&#8211;</span>
-            </>
+            </Fragment>
           ))}
         </Marquee>
       </div>
