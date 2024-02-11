@@ -48,7 +48,7 @@ const AboutParagraph = ({
     <Paragraph
       {...props}
       className={cn(
-        "mb-0 text-3xl leading-[1.4] md:w-3/4 lg:w-1/2 px-col-gap",
+        "mb-0 text-xl sm:text-3xl leading-[1.4] md:w-3/4 lg:w-1/2 px-col-gap",
         className
       )}
       initial="hidden"

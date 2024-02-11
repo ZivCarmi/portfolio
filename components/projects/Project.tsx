@@ -13,7 +13,7 @@ type ProjectProps = {
 
 const Project3 = ({ project, index }: ProjectProps) => {
   return (
-    <div className="relative px-col-gap">
+    <div className="relative px-col-gap max-w-96 mx-auto">
       <div className="outline outline-1 -outline-offset-1 outline-site-secondary group rounded-[calc(var(--radius)-1px)]">
         <div className="flex flex-col rounded-md min-h-96 p-col-gap relative bg-card duration-300 group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:z-10">
           <ul className="flex items-center flex-wrap gap-1 mb-8">

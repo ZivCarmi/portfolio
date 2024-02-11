@@ -94,7 +94,7 @@ header {
 }
 
 html {
-  font-size: 2vw;
+  font-size: 12px;
 }
 
 @media (min-width: 640px) {
