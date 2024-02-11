@@ -10,18 +10,16 @@ const Home = ({ ...props }: SectionProps) => {
       {...props}
       className="h-[90vh] md:h-screen flex-col bg-background md:bg-gradient-to-r sm:from-transparent sm:from-[62.5%] sm:to-site-secondary sm:to-[62.5%] mb-40 relative"
     >
-      <div className="w-full h-full flex flex-col justify-center mt-[var(--header-height)] gap-[calc(var(--header-height)-3rem)]">
-        <Container className="md:w-[62.5%] md:pr-0 relative z-50">
+      <div className="w-full h-full flex flex-col justify-center mt-[var(--header-height)] gap-8 md:gap-0">
+        <Container className="md:w-[62.5%] md:pr-0 relative z-50 h-3/5 md:h-auto flex items-end">
           <Title />
         </Container>
-        <div className="md:relative">
-          <Container className="bg-site-secondary md:bg-transparent py-24 md:py-0 flex items-center justify-center">
-            <div className="sm:w-1/2 md:w-1/4 ml-auto border-t border-b border-border p-1 relative">
-              <EntryText />
-            </div>
-          </Container>
+        <Container className="bg-site-secondary md:bg-transparent py-24 md:py-0 flex items-center justify-center md:relative h-2/5 md:h-auto">
+          <div className="sm:w-1/2 md:w-1/4 ml-auto border-t border-b border-border p-1 relative">
+            <EntryText />
+          </div>
           <ArrowDown />
-        </div>
+        </Container>
       </div>
     </Section>
   );

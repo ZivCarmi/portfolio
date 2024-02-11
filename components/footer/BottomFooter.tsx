@@ -14,20 +14,24 @@ const BottomFooter = () => {
   return (
     <div className="pt-14 mt-32 border-t">
       <Container className="flex items-center justify-between sm:justify-normal">
-        <BottomFooterColumn>
-          <span className="inline-flex items-center">
-            <Copyright className="mr-1.5 w-4 h-4" />
-            {getCurrentYear()}
-          </span>
-        </BottomFooterColumn>
-        <BottomFooterColumn>
-          <span>
-            Made By Me <span className="text-site-secondary">:)</span>
-          </span>
-        </BottomFooterColumn>
-        <BottomFooterColumn className="sm:ml-auto">
-          <ModeToggle />
-        </BottomFooterColumn>
+        <div className="flex flex-1 flex-col-reverse sm:flex-row gap-1 sm:gap-0">
+          <BottomFooterColumn className="flex-1">
+            <span className="inline-flex items-center">
+              <Copyright className="mr-1.5 w-4 h-4" />
+              {getCurrentYear()}
+            </span>
+          </BottomFooterColumn>
+          <BottomFooterColumn className="flex-1">
+            <span>
+              Made By Me <span className="text-site-secondary">:)</span>
+            </span>
+          </BottomFooterColumn>
+        </div>
+        <div className="flex-1">
+          <BottomFooterColumn className="sm:ml-auto">
+            <ModeToggle />
+          </BottomFooterColumn>
+        </div>
       </Container>
     </div>
   );

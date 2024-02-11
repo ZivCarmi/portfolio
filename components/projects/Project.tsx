@@ -13,27 +13,30 @@ type ProjectProps = {
 
 const Project3 = ({ project, index }: ProjectProps) => {
   return (
-    <div className="relative px-col-gap max-w-96 mx-auto">
+    <div className="relative px-col-gap">
       <div className="outline outline-1 -outline-offset-1 outline-site-secondary group rounded-[calc(var(--radius)-1px)]">
-        <div className="flex flex-col rounded-md min-h-96 p-col-gap relative bg-card duration-300 group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:z-10">
+        <div className="flex flex-col rounded-md min-h-[360px] md:min-h-[25vw] p-col-gap relative bg-card duration-300 group-hover:translate-x-3 group-hover:-translate-y-3 group-hover:z-10">
           <ul className="flex items-center flex-wrap gap-1 mb-8">
             <li>
-              <Badge className="text-[0.62rem] px-1.5">
+              <Badge className="text-xs sm:text-[0.62rem] px-1.5">
                 N.{zeroPad(index + 1, 3)}
               </Badge>
             </li>
             {project.tags.map((tag) => (
               <li key={tag}>
-                <Badge className="text-[0.62rem] px-1.5" variant="secondary">
+                <Badge
+                  className="text-xs sm:text-[0.62rem] px-1.5"
+                  variant="secondary"
+                >
                   {tag}
                 </Badge>
               </li>
             ))}
           </ul>
-          <h3 className="text-[2.5rem] md:text-4xl font-bold tracking-wide text-balance text-card-foreground mb-6">
+          <h3 className="text-[2.5rem] md:text-4xl font-bold tracking-tighter text-balance text-card-foreground mb-6">
             {project.title}
           </h3>
-          <Paragraph className="m-0 text-pretty font-medium text-card-foreground/50">
+          <Paragraph className="m-0 text-xl md:text-base text-pretty font-medium text-card-foreground/50">
             {project.description}
           </Paragraph>
           <div className="mt-auto flex justify-between">
@@ -41,7 +44,7 @@ const Project3 = ({ project, index }: ProjectProps) => {
               <Link
                 href={project.github}
                 target="_blank"
-                className="flex items-center text-card-foreground/70 sm:duration-700 sm:translate-y-3 sm:opacity-0 sm:group-hover:opacity-100 sm:group-hover:translate-y-0"
+                className="flex items-center text-card-foreground/70 sm:duration-700 sm:translate-y-3 lg:opacity-0 lg:group-hover:opacity-100 sm:group-hover:translate-y-0"
               >
                 <ChevronLeft className="w-4 h-4" />
                 On GitHub

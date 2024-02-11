@@ -99,7 +99,7 @@ html {
 
 @media (min-width: 640px) {
   :root {
-    --col-gap: 2rem;
+    --col-gap: 1.5rem;
   }
 
   html {
@@ -107,7 +107,7 @@ html {
   }
 }
 
-@media (min-width: 768px) and (max-width: 1600px) {
+@media (min-width: 768px) {
   html {
     font-size: 1.1vw;
   }

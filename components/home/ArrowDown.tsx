@@ -11,7 +11,10 @@ const container: Variants = {
     opacity: 1,
     y: ["30%", "10%"],
     transition: {
-      delay: 1.75,
+      opacity: {
+        duration: 0.8,
+        delay: 1,
+      },
       y: {
         repeatType: "reverse",
         duration: 0.6,

@@ -15,7 +15,7 @@ const TopFooterColumn = ({ title, children }: TopFooterColumnProps) => {
       whileInView="visible"
       viewport={{ once: true }}
       variants={topFooterVariants}
-      className="sm:w-1/4 px-col-gap"
+      className="flex-1 sm:w-1/4 px-col-gap"
     >
       <h2 className="tracking-[0.28rem] text-zinc-300 mb-4">{title}</h2>
       {children}

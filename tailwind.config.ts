@@ -22,6 +22,7 @@ const config = {
         "col-gap": "var(--col-gap)",
       },
       screens: {
+        md: "881px",
         tall: { raw: "(max-height: 1199px)" },
       },
       colors: {

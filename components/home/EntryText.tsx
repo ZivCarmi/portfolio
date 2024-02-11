@@ -10,9 +10,9 @@ const container: Variants = {
   visible: {
     clipPath: "inset(0)",
     transition: {
-      type: "cubic-bezier(0,.57,.55,1)",
-      delay: 0.8,
-      duration: 1,
+      ease: [0, 0.57, 0.55, 1],
+      delay: 1,
+      duration: 0.8,
     },
   },
 };

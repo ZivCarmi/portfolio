@@ -31,7 +31,6 @@ const children: Variants = {
     transition: {
       ease: [0.33, 1, 0.68, 1],
       duration: 1,
-      when: "beforeChildren",
     },
   },
 };
@@ -46,6 +45,7 @@ const dotVariant: Variants = {
     x: 0,
     transition: {
       duration: 0.8,
+      delay: 1,
     },
   },
 };
