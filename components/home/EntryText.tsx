@@ -34,7 +34,7 @@ const paragraphVariants: Variants = {
 
 const EntryText = () => {
   return (
-    <Container className="px-0 sm:px-col-gap">
+    <div className="w-full px-0 sm:px-col-gap">
       <motion.div
         className="sm:w-1/2 md:w-1/4 ml-auto border-t border-b border-border relative px-col-gap sm:p-1"
         initial="hidden"
@@ -55,7 +55,7 @@ const EntryText = () => {
           <span className="font-bold">form and function</span>.
         </Paragraph>
       </motion.div>
-    </Container>
+    </div>
   );
 };
 
