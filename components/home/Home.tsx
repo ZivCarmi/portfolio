@@ -1,4 +1,4 @@
-import ArrowDown from "./ArrowDown";
+import ScrollDownSVG from "./ScrollDownSVG";
 import Container from "../ui/Container";
 import Section, { SectionProps } from "../ui/Section";
 import EntryText from "./EntryText";
@@ -14,12 +14,10 @@ const Home = ({ ...props }: SectionProps) => {
         <Container className="md:w-[62.5%] md:pr-0 relative z-50 h-3/5 md:h-auto flex items-end">
           <Title />
         </Container>
-        <Container className="bg-site-secondary md:bg-transparent py-24 md:py-0 flex items-center justify-center relative h-2/5 md:h-auto">
-          <div className="sm:w-1/2 md:w-1/4 ml-auto border-t border-b border-border p-1 relative">
-            <EntryText />
-          </div>
-          <ArrowDown />
-        </Container>
+        <div className="bg-site-secondary md:bg-transparent py-24 md:py-0 flex items-center justify-center relative h-2/5 md:h-auto">
+          <EntryText />
+          <ScrollDownSVG />
+        </div>
       </div>
     </Section>
   );

@@ -22,7 +22,7 @@ const topFooterVariants = {
 const TopFooterColumn = ({ title, children }: TopFooterColumnProps) => {
   return (
     <motion.div
-      className="flex-1 sm:w-1/4 px-col-gap"
+      className="w-1/2 sm:w-1/4 px-col-gap"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}

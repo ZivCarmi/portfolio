@@ -23,7 +23,7 @@ const projectVariant: Variants = {
   visible: {
     opacity: 1,
     transition: {
-      duration: 0.75,
+      duration: 0.5,
     },
   },
 };
@@ -34,7 +34,9 @@ const Project = ({ project, index }: ProjectProps) => {
 
   return (
     <motion.div
-      className="relative px-col-gap"
+      className={`relative px-col-gap ${
+        !isProjectInView ? "pointer-events-none" : ""
+      }`}
       variants={projectVariant}
       initial="hidden"
       whileInView="visible"
