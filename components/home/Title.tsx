@@ -75,6 +75,27 @@ const Title = () => {
         </motion.div>
       </motion.div>
     </motion.h1>
+    // <motion.h1
+    //   className="text-[19vw]/none sm:text-[12rem]/none font-bold tracking-tighter text-site-secondary"
+    //   aria-label="Full Stack Developer"
+    //   initial="hidden"
+    //   whileInView="visible"
+    //   viewport={{ once: true }}
+    //   style={{ willChange }}
+    //   variants={container}
+    // >
+    //   <motion.div variants={children}>Full Stack</motion.div>
+    //   <motion.div className="ml-10 sm:ml-20" variants={children}>
+    //     Developer
+    //     <motion.div
+    //       className="text-white inline-block"
+    //       variants={dotVariant}
+    //       style={{ willChange }}
+    //     >
+    //       .
+    //     </motion.div>
+    //   </motion.div>
+    // </motion.h1>
   );
 };
 

@@ -19,7 +19,7 @@ const Wording = ({ ...props }: SectionProps) => {
             </span>
           ))}
         </div>
-        <div className="space-y-44">
+        <div className="space-y-64">
           {skills.map(({ id, text }) => (
             <Skill key={id} text={text} />
           ))}

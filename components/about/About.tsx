@@ -5,7 +5,7 @@ import Section, { SectionProps } from "../ui/Section";
 import AboutArticle from "./AboutArticle";
 import AboutParagraph from "./AboutParagraph";
 import AboutTitle from "./AboutTitle";
-import SkillsMarquee from "./SkillsMarquee";
+import TitlesMarquees from "./TitlesMarquees";
 
 const About = ({ ...props }: SectionProps) => {
   return (
@@ -26,7 +26,7 @@ const About = ({ ...props }: SectionProps) => {
               />
             </Container>
           </AboutArticle>
-          {idx === 0 && <SkillsMarquee />}
+          {idx === 0 && <TitlesMarquees />}
         </Fragment>
       ))}
     </Section>
