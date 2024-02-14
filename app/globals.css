@@ -4,8 +4,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 96%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 330.04 101.53% 96.86%;
+    --foreground: 0 0 20%;
 
     --card: 0 0 5%;
     --card-foreground: 0 0% 96%;
@@ -22,20 +22,17 @@
     --muted: 210 40% 96.1%;
     --muted-foreground: 0deg 0% 60.78%;
 
-    --accent: 210 40% 96.1%;
+    --accent: 0 0 85%;
     --accent-foreground: 222.2 47.4% 11.2%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.29deg 31.82% 91.37% / 35%;
+    --border: 0 0 85%;
     --input: 214.3 31.8% 91.4%;
     --ring: 222.2 84% 4.9%;
 
     --radius: 0.5rem;
-
-    --site-primary: 0 0% 0%;
-    --site-primary-foreground: 0 0% 100%;
 
     --site-secondary: 330.04 101.53% 50.86%;
     --site-secondary-foreground: 330.04 101.53% 65.86%;
@@ -69,6 +66,9 @@
     --border: 0 0 15%;
     --input: 0 0 15%;
     --ring: 212.7 26.8% 83.9%;
+
+    --site-secondary: 330.04 101.53% 50.86%;
+    --site-secondary-foreground: 330.04 101.53% 65.86%;
   }
 }
 
@@ -77,9 +77,18 @@
   --col-gap: 1.25rem;
 }
 
+@media (min-width: 640px) {
+  :root {
+    --col-gap: 1.5rem;
+  }
+}
+
 @layer base {
   * {
     @apply border-border;
+  }
+  html {
+    @apply text-xs sm:text-[1.72vw] md:text-[1.1vw] 2xl:text-[18px];
   }
   body {
     @apply bg-background text-foreground;
@@ -87,34 +96,7 @@
   a:hover {
     @apply text-site-secondary;
   }
-}
-
-header {
-  height: var(--header-height);
-}
-
-html {
-  font-size: 12px;
-}
-
-@media (min-width: 640px) {
-  :root {
-    --col-gap: 1.5rem;
-  }
-
-  html {
-    font-size: 1.5vw;
-  }
-}
-
-@media (min-width: 768px) {
-  html {
-    font-size: 1.1vw;
-  }
-}
-
-@media (min-width: 1601px) {
-  html {
-    font-size: 18px;
+  header {
+    height: var(--header-height);
   }
 }

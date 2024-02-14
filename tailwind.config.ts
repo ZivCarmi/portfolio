@@ -18,12 +18,31 @@ const config = {
       },
     },
     extend: {
+      fontSize: {
+        "10xl": [
+          "11.25rem",
+          {
+            lineHeight: "1",
+            letterSpacing: "-0.05em",
+            fontWeight: "800",
+          },
+        ],
+        "10xl-mobile": [
+          "18.6vw",
+          {
+            lineHeight: "1",
+            letterSpacing: "-0.05em",
+            fontWeight: "800",
+          },
+        ],
+      },
       spacing: {
         "col-gap": "var(--col-gap)",
       },
       screens: {
         md: "881px",
-        tall: { raw: "(max-height: 1199px)" },
+        "2xl": "1631px",
+        "3xl": "1799px",
       },
       colors: {
         border: "hsl(var(--border))",
@@ -59,8 +78,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "site-primary": "hsl(var(--site-primary))",
-        "site-primary-foreground": "hsl(var(--site-primary-foreground))",
         "site-secondary": "hsl(var(--site-secondary))",
         "site-secondary-foreground": "hsl(var(--site-secondary-foreground))",
       },

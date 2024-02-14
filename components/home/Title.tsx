@@ -1,6 +1,6 @@
 "use client";
 
-import { Variants, motion, useWillChange } from "framer-motion";
+import { Variants, motion } from "framer-motion";
 
 const h1Variants: Variants = {
   hidden: {
@@ -37,7 +37,7 @@ const wordsVariants: Variants = {
 
 const dotVariant: Variants = {
   hidden: {
-    x: 20,
+    x: 12,
     opacity: 0,
   },
   visible: {
@@ -51,25 +51,21 @@ const dotVariant: Variants = {
 };
 
 const Title = () => {
-  const willChange = useWillChange();
-
   return (
     <motion.h1
-      className="font-extrabold tracking-wide text-site-secondary text-[14vw]/none sm:text-9xl p-1"
+      className="text-site-secondary text-10xl-mobile sm:text-10xl flex flex-col"
       aria-label="Full Stack Developer"
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      style={{ willChange }}
       variants={h1Variants}
     >
       <motion.div variants={wordsVariants}>Full Stack</motion.div>
-      <motion.div className="ml-10 sm:ml-20" variants={wordsVariants}>
+      <motion.div className="3xl:ml-[5.6rem]" variants={wordsVariants}>
         Developer
         <motion.div
-          className="text-white inline-block"
+          className="text-foreground inline-block"
           variants={dotVariant}
-          style={{ willChange }}
         >
           .
         </motion.div>

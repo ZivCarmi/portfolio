@@ -5,7 +5,7 @@ import { Variants, motion } from "framer-motion";
 const container: Variants = {
   hidden: {
     opacity: 0,
-    y: 20,
+    y: 12,
   },
   visible: {
     opacity: 1,
@@ -28,12 +28,12 @@ const svg: Variants = {
   },
 };
 
-const ArrowDown = () => {
+const ScrollDownSVG = () => {
   return (
-    <motion.div className="absolute top-0 right-0 -translate-y-1/2 md:right-auto md:translate-y-1/3 md:left-[calc(62.5%-100px)] flex items-center justify-center mix-blend-difference">
+    <motion.div className="absolute top-0 right-0 -translate-y-1/2 md:right-auto md:translate-y-1/4 md:left-[calc(62.5%-100px)] flex items-center justify-center mix-blend-difference">
       <motion.svg
         viewBox="0 0 300 300"
-        className="w-[150px] h-[150px] md:w-[200px] md:h-[200px]"
+        className="w-[150px] h-[150px] md:w-[200px] md:h-[200px] text-site-secondary"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true }}
@@ -46,7 +46,7 @@ const ArrowDown = () => {
           />
         </defs>
         <motion.text
-          fill="#ff0482"
+          fill="currentColor"
           className="text-[18px] tracking-[2.6px] font-extrabold"
           animate="rotation"
           variants={svg}
@@ -60,4 +60,4 @@ const ArrowDown = () => {
   );
 };
 
-export default ArrowDown;
+export default ScrollDownSVG;

@@ -4,7 +4,7 @@ import ProjectsList from "./ProjectsList";
 
 const Projects = ({ ...props }: SectionProps) => {
   return (
-    <Section {...props} className="lg:h-auto items-center ">
+    <Section {...props} className="items-center">
       <Container>
         <div className="mx-auto w-full md:w-1/2">
           <h2 className="text-2xl sm:text-xl text-center text-pretty text-zinc-300 mb-[calc(var(--col-gap)*2)] border-t border-b py-4 relative z-50">
