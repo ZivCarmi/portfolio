@@ -6,8 +6,8 @@ export const projects: ProjectType[] = [
     description:
       "Classic Monopoly game with standard rules set that can be played with your friends online.",
     tags: ["React", "Node.js", "Tailwind"],
-    website: "https://socket-io-monopoly.vercel.app",
-    github: "https://github.com/ZivCarmi/Socket.IO-Monopoly",
+    website: "https://monopoly-front.onrender.com",
+    github: "https://github.com/ZivCarmi/monopoly-front",
   },
   {
     title: "JobSearch",
