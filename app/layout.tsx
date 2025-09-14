@@ -2,6 +2,7 @@ import Footer from "@/components/footer/Footer";
 import Header from "@/components/shared/Header";
 import GridLayout from "@/components/ui/GridLayout";
 import { ThemeProvider } from "@/components/ui/theme-provider";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Footer />
         </ThemeProvider>
       </body>
+      <GoogleAnalytics gaId="G-JRDBQ5CY41" />
     </html>
   );
 }
