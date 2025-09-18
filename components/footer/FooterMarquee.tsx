@@ -27,7 +27,7 @@ const FooterMarquee = () => {
       >
         {greetings.map((greet) => (
           <Fragment key={greet}>
-            <div className="text-7xl font-bold">{greet}</div>
+            <span className="text-7xl font-bold">{greet}</span>
             <span className="text-7xl mx-10 font-bold">&#8211;</span>
           </Fragment>
         ))}

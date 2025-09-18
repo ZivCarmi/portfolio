@@ -40,7 +40,7 @@ type MarqueeTitleProps = {
 };
 
 const MarqueeTitle = ({ children }: MarqueeTitleProps) => {
-  return <div className="text-5xl sm:text-9xl font-bold">{children}</div>;
+  return <span className="text-5xl sm:text-9xl font-bold">{children}</span>;
 };
 
 interface MarqueeTitleDashProps extends React.HTMLAttributes<HTMLSpanElement> {}
