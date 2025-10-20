@@ -10,21 +10,21 @@ type TagsProps = {
 const Tags = ({ tags, index }: TagsProps) => {
   return (
     <ul className="flex items-center flex-wrap gap-1 mb-8">
-      <TagBade>N.{zeroPad(index + 1, 3)}</TagBade>
+      <TagBadge>N.{zeroPad(index + 1, 3)}</TagBadge>
       {tags.map((tag) => (
-        <TagBade key={tag} variant="secondary">
+        <TagBadge key={tag} variant="secondary">
           {tag}
-        </TagBade>
+        </TagBadge>
       ))}
     </ul>
   );
 };
 
-export interface TagBadeProps
+export interface TagBadgeProps
   extends React.HTMLAttributes<HTMLDivElement>,
     VariantProps<typeof badgeVariants> {}
 
-const TagBade = ({ children, className, ...props }: TagBadeProps) => {
+const TagBadge = ({ children, className, ...props }: TagBadgeProps) => {
   return (
     <li>
       <Badge

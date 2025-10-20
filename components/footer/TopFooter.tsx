@@ -13,7 +13,7 @@ const TopFooter = () => {
           </li>
         </ul>
       </TopFooterColumn>
-      <TopFooterColumn title="CONTACT">
+      <TopFooterColumn title="SOCIALS">
         <Socials className="space-y-4" />
       </TopFooterColumn>
     </Container>

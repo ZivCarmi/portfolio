@@ -28,7 +28,7 @@ const TopFooterColumn = ({ title, children }: TopFooterColumnProps) => {
       viewport={{ once: true }}
       variants={topFooterVariants}
     >
-      <h2 className="tracking-[0.28rem] text-zinc-300 mb-4">{title}</h2>
+      <h2 className="tracking-wide text-zinc-300 mb-4">{title}</h2>
       {children}
     </motion.div>
   );
