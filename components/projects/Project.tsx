@@ -42,7 +42,7 @@ const projectVariantInner: Variants = {
 };
 
 const Project = ({ project, index }: ProjectProps) => {
-  const isMobile = window.innerWidth < 640;
+  const isMobile = typeof window !== "undefined" && window.innerWidth < 640;
   const projectRef = useRef(null);
   const isProjectInView = useInView(projectRef, { amount: 1 });
 

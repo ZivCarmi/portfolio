@@ -1,18 +1,20 @@
 import { SocialType } from "@/types/Social";
-import { FaLinkedinIn } from "react-icons/fa";
-import { FiGithub } from "react-icons/fi";
+import { FaGithub, FaXTwitter, FaLinkedinIn } from "react-icons/fa6";
 
 export const socials: SocialType[] = [
   {
     name: "GitHub",
     href: "https://github.com/ZivCarmi",
-    Icon: FiGithub,
-    description: "My GitHub link",
+    Icon: FaGithub,
   },
   {
     name: "Linkedin",
     href: "https://www.linkedin.com/in/ziv-carmi-9107751a1",
     Icon: FaLinkedinIn,
-    description: "My Linkedin link",
+  },
+  {
+    name: "X (Twitter)",
+    href: "https://x.com/carmi_ziv",
+    Icon: FaXTwitter,
   },
 ];

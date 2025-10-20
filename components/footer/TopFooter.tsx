@@ -1,22 +1,37 @@
 import Link from "next/link";
 import Socials from "../shared/Socials";
 import Container from "../ui/Container";
-import TopFooterColumn from "./TopFooterColumn";
+import FooterColumn from "./FooterColumn";
+
+const topFooterVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      delay: 0.25,
+      duration: 0.3,
+    },
+  },
+};
 
 const TopFooter = () => {
   return (
     <Container className="sm:text-lg flex">
-      <TopFooterColumn title="CONTACT">
+      <FooterColumn variants={topFooterVariants}>
+        <h2 className="tracking-wide text-zinc-300 mb-4">CONTACT</h2>
         <ul>
           <li>
             <Link href="mailto:carmi.ziv@gmail.com">carmi.ziv@gmail.com</Link>
           </li>
         </ul>
-      </TopFooterColumn>
-      <TopFooterColumn title="SOCIALS">
+      </FooterColumn>
+      <FooterColumn variants={topFooterVariants}>
+        <h2 className="tracking-wide text-zinc-300 mb-4">CONTACT</h2>
         <Socials className="space-y-4" />
-      </TopFooterColumn>
+      </FooterColumn>
     </Container>
   );
 };
+
 export default TopFooter;
