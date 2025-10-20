@@ -28,7 +28,7 @@ const config = {
           },
         ],
         "10xl-mobile": [
-          "18.6vw",
+          "18.43vw",
           {
             lineHeight: "1",
             letterSpacing: "-0.05em",

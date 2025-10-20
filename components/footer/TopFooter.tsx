@@ -27,7 +27,7 @@ const TopFooter = () => {
         </ul>
       </FooterColumn>
       <FooterColumn variants={topFooterVariants}>
-        <h2 className="tracking-wide text-zinc-300 mb-4">CONTACT</h2>
+        <h2 className="tracking-wide text-zinc-300 mb-4">SOCIALS</h2>
         <Socials className="space-y-4" />
       </FooterColumn>
     </Container>
