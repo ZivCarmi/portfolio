@@ -8,7 +8,7 @@ const Home = ({ ...props }: SectionProps) => {
   return (
     <Section
       {...props}
-      className="h-svh flex-col bg-background md:bg-gradient-to-r sm:from-transparent sm:from-[62.5%] sm:to-site-secondary sm:to-[62.5%] mb-40 relative"
+      className="min-h-svh flex-col bg-background md:bg-gradient-to-r sm:from-transparent sm:from-[62.5%] sm:to-site-secondary sm:to-[62.5%] mb-40 relative"
     >
       <div className="w-full h-full flex flex-col justify-center mt-[var(--header-height)] gap-20 md:gap-0">
         <Container className="md:w-[62.5%] md:pr-0 relative z-50 h-3/5 md:h-auto flex items-end overflow-x-clip">
