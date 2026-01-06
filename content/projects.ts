@@ -2,9 +2,16 @@ import { ProjectType } from "@/types/Project";
 
 export const projects: ProjectType[] = [
   {
+    title: "VION",
+    description:
+      "A premium black and white Framer template for SaaS products and startups.",
+    tags: ["Framer", "React"],
+    website: "https://vionx.framer.website/",
+  },
+  {
     title: "Tisot Terminal 1",
     description:
-      "Interactive real-time flight board for Terminal 1, supporting internationalization and showing updated departures and arrivals with continuously refreshed live data.",
+      "Real-time interactive flight board for Terminal 1 featuring live arrivals & departures with internationalization support.",
     tags: ["Next.js", "React", "Node.js", "Tailwind"],
     website: "https://tisot-terminal1-next.onrender.com",
     github: "https://github.com/ZivCarmi/tisot-terminal1-next",
